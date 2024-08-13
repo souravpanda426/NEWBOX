@@ -15,7 +15,7 @@ public class TestGoogle {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-extensions");
-		options.addArguments("--headless");
+	    options.addArguments("--headless");
 		options.addArguments("--disable-gpu");
 		options.addArguments("--start-maximized");
 		options.addArguments("--disable-infobars");

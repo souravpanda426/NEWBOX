@@ -69,6 +69,7 @@ public class BaseTest {
 			
 			
 			test.log(Status.FAIL, "test case failed is"+result.getName());
+			test.addScreenCaptureFromPath(null);
 		
 			
 			
@@ -79,6 +80,8 @@ public class BaseTest {
 		else if(result.getStatus()==ITestResult.SUCCESS){
 			
 		test.log(Status.PASS, "test case passed is"+result.getName());
+		
+        		
 		
 		}
 		

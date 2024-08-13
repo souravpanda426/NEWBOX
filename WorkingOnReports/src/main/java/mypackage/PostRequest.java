@@ -9,6 +9,7 @@ import org.json.JSONObject;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 
 public class PostRequest {
@@ -21,16 +22,19 @@ public class PostRequest {
 		
 	  JSONObject json = new JSONObject();
 	  
+	  json.put("email","johnsmith90@yrp.com");
+	  json.put("first_name","john");
 	  
 	  
-	  for(int i=0;i<4;i++) {
+	  
+	  /*for(int i=0;i<4;i++) {
 		  
 		  
 		  json.put(CommonMethods.getDataFromExcel("mysheet", i, 0), CommonMethods.getDataFromExcel("mysheet", i, 1));
 		  
 		  
 		  
-	  }
+	  }*/
 	 
 	  
 	  RequestSpecification header = RestAssured.given().header("Content-Type","application/json");
@@ -43,6 +47,7 @@ public class PostRequest {
 	  System.out.println(email);
 	  
 	  
+	
 		
 		
 		
