@@ -3,14 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="mypackage.BaseTest"/>
-      <class name="mypackage.RediffMail"/>
-      <class name="mypackage.Gmaildisplayed"/>
-      <class name="mypackage.NewTest"/>
-      <class name="mypackage.Gmail"/>
-      <class name="mypackage.GetUrl"/>
-      <class name="mypackage.FileUpload"/>
-      <class name="mypackage.InvalidLogin"/>
+     <class name="mypackage.FileUpload"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
