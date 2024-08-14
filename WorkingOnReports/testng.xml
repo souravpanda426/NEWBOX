@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+	<test thread-count="5" name="Testone">
+    <classes>
+  <class name="mypackage.BaseTest"></class>
+    </classes>
+  </test> 
+	
   <test thread-count="5" name="Test">
     <classes>
-      <class name="mypackage.BaseTest"/>
-      <class name="mypackage.RediffMail"/>
-      <class name="mypackage.Gmaildisplayed"/>
-      <class name="mypackage.NewTest"/>
-      <class name="mypackage.Gmail"/>
-      <class name="mypackage.GetUrl"/>
-      <class name="mypackage.FileUpload"/>
-      <class name="mypackage.InvalidLogin"/>
+  <class name="mypackage.FileUpload"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
