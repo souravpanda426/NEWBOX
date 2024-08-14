@@ -36,6 +36,14 @@
     <version>3.0.7</version>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.10.2</version>
+ </dependency>
+
+
 
 
 
@@ -76,11 +84,10 @@
       <plugin>
    <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.3.1</version>
     <configuration>
 		<suitexmlFiles>
-			<suitexmlFile>
-				testng.xml
-			</suitexmlFile>
+			<suitexmlFile>testng.xml</suitexmlFile>
 		</suitexmlFiles>
 	</configuration>
 	  </plugin>
