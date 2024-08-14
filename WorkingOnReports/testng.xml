@@ -3,6 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+	 <class name="mypackage.BaseTest"></class>	
      <class name="mypackage.FileUpload"></class>
     </classes>
   </test> <!-- Test -->
